@@ -1,14 +1,26 @@
 # web pages of portofio
 
+## presentation video
+https://drive.google.com/drive/folders/1yBqW2v1Z6kacTeXMGXkGNib01aAwqHic?usp=sharing 
 ## folder and files
 - css
-    - index.css
+    - style.css
+- json
+    - degrees.json
 - media
-    - all images and videos
+    - travel(folder)
+      - all travel images
+    - other images and videos
+- script
+ - javascript files
 - all html files
+- README.md
+## Executing
+ - link of the site: https://jiuzhou-portfolio.glitch.me/
 
-## executing
- - double click index.html to open the welcome page
+## code
+ - https://glitch.com/edit/#!/jiuzhou-portfolio
+ - https://github.com/jiuzhoulu/CS601-TermProject/tree/glitch
 
 
 

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./css/style.css">
+    <title>bio</title>
+</head>
+<body>
+    <noscript>
+        Our site <strong>requires</strong> Javascript.
+    </noscript>
+    
+    <header>
+        <h1>My Works</h1>
+    </header>
+    <nav>
+        <a href = "index.html">Home</a>
+        <span>Works</span>
+        <a href = "photography.html">Photography</a>
+        <a href = "hobby.html">Hobby</a>
+        <a href = "contact.html">Contact</a>
+    </nav>
+
+    <main id="works">
+        <div class = "leftside">
+            <nav>
+                <button @click ="showIntern">Intern Experiences</button>
+                <button @click="showProj">Course Project</button>
+                
+            </nav>
+        </div>
+        
+        <div class = "midContent">
+            <div v-if="isshow" id="intern">
+                <h2>Intern Experience</h2>
+                <h4>Wine Quality Analysis, AI Engineer Intern</h4>
+                <ul>
+                    <li>Analyzed wine quality by images and videos using knowledge in computer vision.</li>
+                    <li>Acquired data including bubble count, density, and speed using libraries in OpenCV.</li>
+                    <li>Studyed the algorithms for detecting face pores from research paper and utilized them on wine blobs detection</li>
+                    <li>Implemented blob tracking to videos.</li>
+                </ul>
+                <figure>
+                    <img src = "media/sample1.jpg" 
+                        alt="A sample picture with wine bubbles" >
+                    <figcaption>A sample image with wine bubbles</figcaption>
+                </figure>
+
+                <figure>
+                    <img src = "media/sample1ct.jpg" 
+                        alt="The sample picture with wine bubbles and calculated contours" >
+                    <figcaption>A sample image with wine bubbles after computing the contours</figcaption>
+                </figure>
+
+                
+                <figure>
+                    <video controls>
+                        <source src="media/2HoughCircle_batch.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Blobs tracing using HoughCircle</figcaption>
+                </figure>
+
+                <figure>
+                    <video controls>
+                        <source src="media/1minEnclosingCircle_batch.mp4" type="video/mp4">
+                    </video>
+                    <figcaption>Blobs tracing using minEnclosingCircle</figcaption>
+                </figure>
+
+            </div>
+
+            <div v-else id="courseProj">
+                <h1>Front-end web developement</h1>
+            </div>
+            
+        </div>
+
+    </main>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src = "script/works.js" defer></script>
+
+</body>
+</html>

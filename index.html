@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./css/style.css">
+    <title>jiuzhou</title>
+</head>
+<body>
+    <noscript>
+        Our site <strong>requires</strong> Javascript.
+    </noscript>
+
+    <header>
+        <h1>Welcome to my page</h1>
+    </header>
+    <nav>
+        <span>Home</span>
+        <a href = "works.html">Works</a>
+        <a href = "photography.html">Photography</a>
+        <a href = "hobby.html">Hobby</a>
+        <a href = "contact.html">Contact</a>
+    </nav>
+    
+    <main id = "bio">
+        <div class = "leftside">
+            <nav>
+                <button @click ="showAboutMe">About Me</button>
+                <button @click="showSchool">My School</button>
+                
+            </nav>
+        </div>
+        <div class = "midContent">
+            <div v-if="isshow" id = "aboutme">
+                <h1>Hello, I'm Jiuzhou. Nice to meet you!</h1>
+                <img src = "media/illustration.jpg" 
+                        alt="An illustration of Jiuzhou" >
+                <!--width="171" height="128"-->  
+                
+                <h3>Where am I from?</h3>
+                <p>My name is Jiuzhou Lu. My homwtown is Shenzhen, China</p>
+                <h3>What am I focusing on?</h3>
+                <p>I start learning computer science in my second year of undergraduate school. 
+                    And currently I am larning to be a software developement engineer.
+                </p>
+                <h3>Hobbies?</h3>
+                <p>I am a fan of video games, movies, and anime</p>
+                <p>My favorite movie director is Johnnie To. Highly encourage everyone to watch his movie <strong>Mad Detective</strong>.</p>
+            </div>
+
+            <div v-else id = "school">
+                My school
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        jiuzhoul@bu.edu
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src = "script/index.js" defer></script>
+</body>
+</html>

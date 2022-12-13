@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./css/style.css">
+    <title>life</title>
+</head>
+<body>
+    <noscript>
+        Our site <strong>requires</strong> Javascript.
+    </noscript>
+    
+    <header>
+        <h1>Photography</h1>
+    </header>
+
+    <nav>
+        <a href = "index.html">Home</a>
+        <a href = "works.html">Works</a>
+        <span>Photography</span>
+        <a href = "hobby.html">Hobby</a>
+        <a href = "contact.html">Contact</a>
+    </nav>
+    
+    <!--width="342" height="256"-->
+    <!--<video width="240" height="424" controls>-->
+    <main id = "photos">
+        <div class = "leftside">
+            <nav>
+                <button @click ="imgFunction(0)">Zion National Park</button>
+                <button @click="imgFunction(1)">The Narrows</button>
+                <button @click="imgFunction(2)">Colorado National Monument</button>
+                <button @click="imgFunction(3)">Rocky Mountain</button>
+                
+            </nav>
+        </div>
+
+        <div class = "midContent">
+
+            <figure>
+                <figcaption>{{loc}}</figcaption>
+                <div id="photoChange">
+                    <button id="prev" v-show ="prevShow" @click="movePhoto(-1)">&#10094;</button>
+                    <button id="next" v-show ="nextShow" @click="movePhoto(1)">&#10095;</button>
+                </div>
+                <img :src = "singleImg" alt="The photo of national park">
+                
+                <div id="photoChange">
+                    <button id="prev" v-show ="prevShow" @click="movePhoto(-1)">&#10094;</button>
+                    <button id="next" v-show ="nextShow" @click="movePhoto(1)">&#10095;</button>
+                </div>
+            </figure>
+            
+        </div>
+    </main>
+
+    <footer>
+        jiuzhoul@bu.edu
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src = "script/photo.js" defer></script>
+</body>
+</html>

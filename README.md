@@ -21,6 +21,10 @@ https://drive.google.com/drive/folders/1yBqW2v1Z6kacTeXMGXkGNib01aAwqHic?usp=sha
 ## code
  - https://glitch.com/edit/#!/jiuzhou-portfolio
  - https://github.com/jiuzhoulu/CS601-TermProject/tree/glitch
+ 
+
+## tag
+Fetch, Vue, flex, responsive site
 
 
 

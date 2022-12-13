@@ -143,6 +143,23 @@ form>button,form>input[type=reset]{
     font-style: oblique;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  margin-top: 20px;
+}
+
+td, th {
+  border: 2px solid #293a8c;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 /* responsive layout */
 @media screen and (max-width: 768px){
     nav{
@@ -151,5 +168,8 @@ form>button,form>input[type=reset]{
     input[type=reset],input[type=submit],button{
         font-size: 15px;
         padding: 10px;
+    }
+    table{
+      width:40%;
     }
 }

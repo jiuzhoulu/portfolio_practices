@@ -32,7 +32,7 @@
             </nav>
         </div>
         <div class = "midContent">
-            <div v-if="isshow" id = "aboutme">
+            <div v-show="isshow" id = "aboutme">
                 <h1>Hello, I'm Jiuzhou. Nice to meet you!</h1>
                 <img src = "media/illustration.jpg" 
                         alt="An illustration of Jiuzhou" >
@@ -49,7 +49,7 @@
                 <p>My favorite movie director is Johnnie To. Highly encourage everyone to watch his movie <strong>Mad Detective</strong>.</p>
             </div>
 
-            <div v-else id = "school">
+            <div v-show="!(isshow)" id = "school">
                 <table>
                   <tr>
                     <th>School</th>

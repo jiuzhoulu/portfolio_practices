@@ -19,7 +19,7 @@ const upload_data=()=> {
             let table = document.querySelector("table");
             data.degrees.forEach((element,index) =>{
               console.log("a row of data",element);
-              let tr = document.createElement("tr");
+              let tr1 = document.createElement("tr");
               for(let key in element){
                 let td = document.createElement("td");
                 let content = element[key];
@@ -27,10 +27,11 @@ const upload_data=()=> {
                 //console.log(content);
 
                 td.innerHTML = content;
-                tr.appendChild(td);
+                tr1.appendChild(td);
               }
-
-              table.appendChild(tr);
+              //console.log(tr1);
+              console.log(table);
+              table.appendChild(tr1);
             });
           });
         }else{
